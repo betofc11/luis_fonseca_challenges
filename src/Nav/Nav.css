@@ -1,0 +1,6 @@
+ul.primaryNav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
