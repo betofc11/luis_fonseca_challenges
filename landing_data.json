@@ -1,0 +1,62 @@
+{
+  "title": "Stockholm",
+  "series": "The MONCLE Travel Guide Series",
+  "image": "/src/assets/adriana-aceves-65c5xq7Qgdk-unsplash.jpg",
+  "footer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quisquam illo sed, consectetur quam eaque sit dolorem dolorum dignissimos velit magnam aperiam pariatur aut cumque vitae, nulla labore nisi assumenda.",
+  "navSecondary": [
+    {
+      "label": "Furniture, books & fashion",
+      "link": "#"
+    },
+    {
+      "label": "Cofee & Beer",
+      "link": "#"
+    },
+    {
+      "label": "Design, galleries & Indie cinemas",
+      "link": "#"
+    }
+  ],
+  "navMain": [
+    {
+      "label": "Need to know",
+      "link": "#"
+    },
+    {
+      "label": "Hotels",
+      "link": "#"
+    },
+    {
+      "label": "Food and drink",
+      "link": "#"
+    },
+    {
+      "label": "Retail",
+      "link": "#"
+    },
+    {
+      "label": "Essays",
+      "link": "#"
+    },
+    {
+      "label": "Culture",
+      "link": "#"
+    },
+    {
+      "label": "Design and architecture",
+      "link": "#"
+    },
+    {
+      "label": "Sport and fitness",
+      "link": "#"
+    },
+    {
+      "label": "Walks",
+      "link": "#"
+    },
+    {
+      "label": "Index",
+      "link": "#"
+    }
+  ]
+}
