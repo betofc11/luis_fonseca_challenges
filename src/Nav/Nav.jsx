@@ -1,8 +1,9 @@
 import React from "react";
+import './Nav.css'
 
 function Nav({ items }) {
   return (
-    <ul>
+    <ul className="primaryNav">
       {items.map((navItem) => (
         <li key={navItem.label}>
           <a href={navItem.link}>{navItem.label}</a>
