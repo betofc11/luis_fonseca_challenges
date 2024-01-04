@@ -12,10 +12,11 @@ function App() {
   return (
     <>
       <Header>
-        <Hgroup series={LANDING_PAGE_DATA.series} title={LANDING_PAGE_DATA.title} />
-        <nav>
-          <Nav items={LANDING_PAGE_DATA.navMain} />
-        </nav>
+        <Hgroup
+          series={LANDING_PAGE_DATA.series}
+          title={LANDING_PAGE_DATA.title}
+        />
+        <Nav items={LANDING_PAGE_DATA.navMain} />
         <SubMenu items={LANDING_PAGE_DATA.navSecondary} />
       </Header>
       <Main>
