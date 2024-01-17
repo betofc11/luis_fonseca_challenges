@@ -23,6 +23,21 @@
   justify-content: center;
   align-items: center;
 }
+
+.movie-list {
+  text-align: left;
+}
+
+.movie-list .date {
+  font-weight: bold;
+}
+
+.card.clock {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 35pt;
+}
+
 input {
   margin: 0 5px;
   font-size: 20pt;
