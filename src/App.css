@@ -18,6 +18,27 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  margin: 0 5px;
+  font-size: 20pt;
+  max-width: 70px;
+  border: none;
+  border-radius: 8px;
+}
+
+.bg-yellow {
+  background-color: goldenrod;
+}
+
+.bg-green {
+  background-color: darkgreen;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
