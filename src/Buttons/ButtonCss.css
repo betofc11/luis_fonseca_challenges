@@ -1,0 +1,14 @@
+
+.button-static {
+  background-color: cadetblue;
+  color: whitesmoke;
+}
+
+.button-static:hover {
+  background-color: whitesmoke;
+  color: cadetblue;
+}
+
+.button-static:active {
+  background-color: aquamarine;
+}

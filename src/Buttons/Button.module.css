@@ -1,0 +1,14 @@
+.button {
+  background-color: chocolate;
+  color: bisque;
+}
+
+.button:hover {
+  background-color: bisque;
+  color: chocolate;
+}
+
+.button:active {
+  background-color: brown;
+  color: antiquewhite;
+}
