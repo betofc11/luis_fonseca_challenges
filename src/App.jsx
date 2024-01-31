@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from "react";
+import "./App.css";
+import Nav from "./Nav/Nav";
+import Product from "./Products/Product";
+import { Provider as CartProvider } from "./store/CartContext";
+import { Provider as LoginProvider } from "./store/LoginContext"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState([]);
+
+  useEffect(() => {
+    fetch("https://fakestoreapi.com/products")
+      .then((res) => res.json())
+      .then((prod) => {
+        setProducts(prod);
+      });
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+    <LoginProvider>
+      <CartProvider>
+        <Nav cart={cart}/>
+        <h1>Products</h1>
+        <div className="cards-container">
+          {products.length > 0 ? (
+            products.map((prod) => (
+              <Product key={prod.id} product={prod} />
+            ))
+          ) : (
+            <h2> There's no products</h2>
+          )}
+        </div>
+        <p className="read-the-docs">
+          Click on the Vite and React logos to learn more
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      </CartProvider>
+    </LoginProvider>
+  );
 }
 
-export default App
+export default App;

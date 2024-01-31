@@ -34,9 +34,63 @@
 }
 
 .card {
+  background-color: rgba(60, 59, 70, 0.614);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 2em;
+  flex: 1;
+
+  border: 1px solid rgb(60, 59, 70);
+  border-radius: 20px;
+}
+
+.card .title {
+  margin-top: auto;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  overflow: hidden;
+  width: 150px;
+  margin-block: 10px;
+}
+
+.card img {
+  margin-bottom: auto;
+  border-radius: 20px;
+}
+
+.card .price {
+  font-weight: bold;
+  margin-block: 10px;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+.cards-container {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.cart-expanded {
+  background-color: cornflowerblue;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.cart-expanded li {
+  text-align: left;
+  border-bottom: 1px solid ;
+}
+
+.cart-expanded li:not(:first-child) {
+  margin-top: 20px;
+}
+
+.cart-expanded ul {
+  padding-inline: 20px;
+  list-style: none;
 }
