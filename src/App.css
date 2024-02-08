@@ -76,7 +76,7 @@
 }
 
 .cart-expanded {
-  background-color: cornflowerblue;
+  background-color: rgba(56, 53, 73, 0.476);
   border-radius: 20px;
   padding: 10px;
 }

@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import CartContext from "../store/CartContext";
 import LoginContext from "../store/LoginContext";
 
-const Nav = ({ cart }) => {
+const Nav = () => {
   const { items } = useContext(CartContext);
   const { isLogged, logIn, logOut } = useContext(LoginContext);
   const [isCartOpen, setIsCartOpen] = useState(false);
