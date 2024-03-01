@@ -40,3 +40,26 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.pokemon-list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.pokemon-list li {
+  margin: 0 10px 10px 0;
+  width: calc(50% - 20px);
+  border: 1px solid whitesmoke;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pokemon-list li:hover {
+  cursor: pointer;
+  border-color: purple;
+  background-color: rgba(128, 0, 128, 0.279);
+}
+
